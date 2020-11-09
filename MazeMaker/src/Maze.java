@@ -294,7 +294,7 @@ public class Maze implements Cloneable {
 	
 	// A function to make maze creation even more random by randomly choosing how to create it
 	public void generateNewMaze() {
-		int randIndex = 2;
+		int randIndex = random.nextInt(3);
 		if (randIndex == 0)
 			this.generateByDFS();
 		else if (randIndex == 1)
